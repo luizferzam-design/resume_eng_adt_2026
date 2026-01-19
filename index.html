@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Guilherme F. Zamaro - Resume</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary);
+            object-fit: cover;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        .summary {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-category h3 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            padding: 0.3rem 0;
+            border-bottom: 1px dotted #eee;
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .date {
+            color: var(--gray);
+        }
+        
+        .position {
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-details {
+            list-style: none;
+        }
+        
+        .experience-details li {
+            padding: 0.2rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        
+        .experience-details li:before {
+            content: "▸";
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+        }
+        
+        .education-item, .certification-item {
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-container">
+                <!-- Add your profile photo here -->
+                <img src="http://lgferzam.carrd.co/assets/images/image01.jpg?v=2f3854ee" alt="Profile Photo" class="profile-photo">
+                <div class="header-text">
+                    <h1>Luiz Guilherme F. Zamaro</h1>
+                    <div class="title">Martech & AdTech Specialist | Performance Media & Systems Integration</div>
+                    <div class="contact-info">
+                        <div class="contact-item">📱 +55 (11) 99557-0575</div>
+                        <div class="contact-item">✉️ luiz.ferzam@gmail.com</div>
+                        <div class="contact-item">🔗<a href="https://www.linkedin.com/in/luizguilhermezamaro">linkedin.com/in/luizguilhermezamaro</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <div class="summary">
+                Digital Marketing professional with over 10 years of experience, specializing in Performance Media and Web Analytics, and transitioning to Martech/AdTech. I combine solid expertise in managing and planning web & app campaigns with in-depth knowledge of major media platforms such as Google, Meta, and TikTok Ads, as well as extensive knowledge of the ecosystem of apps, MMPs, publishers, DSPs, and ad networks, with experience leading teams in this scenario. With technical knowledge in Python, JavaScript, APIs, and Google Tag Manager for automation and integration of systems, media outlets, and clients, I am seeking positions in Martech, AdTech, or Hybrid Media Management, where I can apply my strategic and technical vision to solve complex problems and scale efficiency, combining the best of marketing with technology.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Martech/AdTech</h3>
+                    <ul class="skill-list">
+                        <li>Google Tag Manager (GTM)</li>
+                        <li>API Integration</li>
+                        <li>Process Automation</li>
+                        <li>Zapier, Make, n8n</li>
+                        <li>AI Agents</li>
+                        <li>Supermetrics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming/Scripting</h3>
+                    <ul class="skill-list">
+                        <li>Python (Intermediate)</li>
+                        <li>JavaScript (Intermediate)</li>
+                        <li>HTML / CSS</li>
+                        <li>Golang and Rust (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Media & Analytics</h3>
+                    <ul class="skill-list">
+                        <li>Google Ads</li>
+                        <li>Meta Ads</li>
+                        <li>TikTok Ads</li>
+                        <li>Google Analytics</li>
+                        <li>Looker Studio</li>
+                        <li>AppsFlyer, Adjust, Singular MMPs</li>
+                        <li>Trackier Hub</li>
+                        <li>Affiliate Marketing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Concepts & Other knowledge</h3>
+                    <ul class="skill-list">
+                        <li>Cybersecurity Fundamentals</li>
+                        <li>DevOps Fundamentals</li>
+                        <li>Agile Methodology</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>English (Fluent)</li>
+                        <li>French (Advanced)</li>
+                        <li>Spanish (Fluent)</li>
+                        <li>Arabic (Intermediate)</li>
+                        <li>Russian and Mandarin Chinese (Basic)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">US Media Consulting</div>
+                    <div class="date">Nov 2024 - Nov 2025</div>
+                </div>
+                <div class="position">AdOps Coordinator</div>
+                <ul class="experience-details">
+                    <li>Technical campaign management, mediating between advertisers and publishers</li>
+                    <li>Implementation of solutions using APIs and automation</li>
+                    <li>Optimization of reporting processes and channel integration</li>
+                    <li>Work in trilingual environment (Portuguese, English, Spanish)</li>
+                    <li>Constant contact with publishers and clients</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">New Paradigms Media</div>
+                    <div class="date">2023 - 2025</div>
+                </div>
+                <div class="position">Owner/Consultant</div>
+                <ul class="experience-details">
+                    <li>Specialized consulting in media campaign planning</li>
+                    <li>Development of data-driven strategies for businesses</li>
+                    <li>Tag implementation and management</li>
+                    <li>Dashboard creation and management</li>
+                    <li>Media planning and execution</li>                    
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Cosmos8 Industrial Consulting</div>
+                    <div class="date">Jan 2023 - Jun 2023</div>
+                </div>
+                <div class="position">Marketing Manager</div>
+                <ul class="experience-details">
+                    <li>Marketing area implementation and KPI definition</li>
+                    <li>CRM management and lead funnel structuring</li>
+                    <li>Sales team training</li>
+                    <li>Management of all media channels</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">CL/AG</div>
+                    <div class="date">Sep 2022 - Jan 2023</div>
+                </div>
+                <div class="position">Media Manager</div>
+                <ul class="experience-details">
+                    <li>Marketing area implementation and KPI definition</li>
+                    <li>CRM management and lead funnel structuring</li>
+                    <li>Sales team training</li>
+                    <li>Management of all media channels</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Flag Comunicação</div>
+                    <div class="date">Aug 2019 - Jun 2022</div>
+                </div>
+                <div class="position">Digital Media Coordinator</div>
+                <ul class="experience-details">
+                    <li>Media planning and execution</li>
+                    <li>Reporting directly to decision makers</li>
+                    <li>Ad Campaigns management, optimization and performance tracking</li>
+                    <li>Management of all media channels</li>
+                    <li>Team management and training</li>
+                </ul>
+            </div>
+
+             <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Alfacon Concursos Públicos</div>
+                    <div class="date">Nov 2017 - Aug 2019</div>
+                </div>
+                <div class="position">Sr. Performance Media Analyst</div>
+                <ul class="experience-details">
+                    <li>Google and Facebook Ads campaign Management</li>
+                    <li>Budget and pace control</li>
+                    <li>E-commerce, Online sales and conversion optimization</li>
+                    <li>management of all media channels</li>
+                </ul>
+            </div>
+
+             <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Cognizant by Google</div>
+                    <div class="date">Sep 2015 - Sep 2017</div>
+                </div>
+                <div class="position">Google Ads Specialist</div>
+                <ul class="experience-details">
+                    <li>Customer service for Google Ads and Analytics</li>
+                    <li>Performance optimization for SMB companies</li>
+                    <li>Troubleshooting and analytics insights</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education & Certifications</h2>
+
+            <div class="education-item">
+                <div class="experience-header">
+                    <div class="company">MBA in Digital Businesses and Artificial Intelligence</div>
+                    <div class="date">2025-2026 (ongoing)</div>
+                </div>
+                <div class="position">FTT - Termomecanica Technology College</div>
+            </div>
+
+            <div class="education-item">
+                <div class="experience-header">
+                    <div class="company">Food Technology Degree</div>
+                    <div class="date">2004-2005</div>
+                </div>
+                <div class="position">FTT - Termomecanica Technology College</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="experience-header">
+                    <div class="company">Google Ads Certifications</div>
+                    <div class="date">Completed</div>
+                </div>
+                <div class="position">Search, Display, Shopping, Video</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="experience-header">
+                    <div class="company">Cybersecurity & Agile</div>
+                    <div class="date">In Progress</div>
+                </div>
+                <div class="position">IBM</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
